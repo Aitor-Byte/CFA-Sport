@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f4f5ef" />
+  <title>CFA Sports | La escena local</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Inicio de CFA Sports"><span class="brand-mark">C</span><span>CFA Sports</span></a>
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a class="active" href="#journal">Noticias</a>
+      <a href="#agenda">Agenda</a>
+      <a href="#announcements">Anuncios</a>
+    </nav>
+    <form class="profile" id="profile-form">
+      <span class="status-dot"></span>
+      <input class="profile-name" id="username" type="text" placeholder="Usuario" aria-label="Nombre de usuario" maxlength="30" />
+      <button class="avatar" type="submit" aria-label="Guardar nombre de usuario">U</button>
+    </form>
+  </header>
+
+  <main id="top">
+    <section class="hero layout-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Mar del Plata · 08 de octubre de 2024</p>
+        <h1>La cancha<br /><em>local.</em></h1>
+        <p class="hero-text">Historias, resultados y protagonistas de la escena amateur y semiprofesional de Mar del Plata y el Partido de General Pueyrredon.</p>
+        <a class="button button-dark" href="#journal">Leer las noticias <span>↘</span></a>
+      </div>
+      <div class="hero-art" aria-label="Partido de fútbol en un campo local">
+        <div class="art-label"><span class="live-pulse"></span> EN FOCO · PUERTO</div>
+        <div class="art-caption"><strong>Donde empieza todo.</strong><span>El deporte que mueve la ciudad</span></div>
+      </div>
+    </section>
+
+    <section class="stats layout-grid" id="agenda" aria-label="Panorama deportivo local">
+      <div class="section-kicker">La semana local <span>↗ 18 coberturas</span></div>
+      <div class="stat"><strong>12</strong><span>disciplinas</span></div>
+      <div class="stat"><strong>34</strong><span>clubes activos</span></div>
+      <div class="stat"><strong>08</strong><span>eventos próximos</span></div>
+      <div class="week-bars" aria-label="Coberturas de la semana">
+        <i class="bar muted"></i><i class="bar filled"></i><i class="bar today"></i><i class="bar filled"></i><i class="bar filled"></i><i class="bar muted"></i><i class="bar filled"></i>
+        <small>L M X J V S D</small>
+      </div>
+    </section>
+
+    <section class="journal layout-grid" id="journal">
+      <div class="section-heading"><p class="eyebrow">Periodismo de cercanía</p><h2>Noticias de acá</h2></div>
+      <div class="filter-row" role="toolbar" aria-label="Filtrar noticias por disciplina">
+        <button class="filter active" data-filter="all">Todo <span>08</span></button>
+        <button class="filter" data-filter="futbol">Fútbol <span>03</span></button>
+        <button class="filter" data-filter="running">Running <span>02</span></button>
+        <button class="filter" data-filter="basket">Básquet <span>02</span></button>
+        <button class="filter" data-filter="mar">Mar <span>01</span></button>
+      </div>
+      <div class="entries" id="entries">
+        <article class="entry" data-type="futbol">
+          <div class="entry-image image-football"><span>FÚTBOL</span></div>
+          <div class="entry-main"><div class="entry-top"><p class="entry-date">Hoy · 09:18</p><span class="entry-type">Primera local</span></div><h3>El clásico del puerto terminó en empate y dejó todo abierto</h3><p class="entry-note">Aldosivi y Talleres igualaron en una tarde intensa. La próxima fecha puede definir quién se queda con la punta.</p><div class="entry-meta"><span>◷ 4 min de lectura</span><span>↗ Liga marplatense</span></div></div>
+          <button class="more" aria-label="Más opciones">•••</button>
+        </article>
+        <article class="entry" data-type="running">
+          <div class="entry-image image-running"><span>RUNNING</span></div>
+          <div class="entry-main"><div class="entry-top"><p class="entry-date">Ayer · 18:40</p><span class="entry-type">Atletismo</span></div><h3>La costa se prepara para una nueva edición de la Vuelta a Playa Grande</h3><p class="entry-note">La prueba espera reunir a más de 600 corredores en sus distancias de 5 y 10 kilómetros.</p><div class="entry-meta"><span>◷ 3 min de lectura</span><span>↗ Inscripciones abiertas</span></div></div>
+          <button class="more" aria-label="Más opciones">•••</button>
+        </article>
+        <article class="entry" data-type="basket">
+          <div class="entry-image image-basket"><span>BÁSQUET</span></div>
+          <div class="entry-main"><div class="entry-top"><p class="entry-date">Lun · 12:05</p><span class="entry-type">Formativas</span></div><h3>Una camada que crece: los U17 ya tienen fixture confirmado</h3><p class="entry-note">Los clubes del partido ultiman detalles para un torneo que vuelve a poner a las formativas en el centro.</p><div class="entry-meta"><span>◷ 5 min de lectura</span><span>↗ 16 equipos</span></div></div>
+          <button class="more" aria-label="Más opciones">•••</button>
+        </article>
+        <article class="entry" data-type="mar">
+          <div class="entry-image image-sailing"><span>MAR</span></div>
+          <div class="entry-main"><div class="entry-top"><p class="entry-date">Dom · 16:22</p><span class="entry-type">Deportes náuticos</span></div><h3>Viento a favor: la flota local cerró temporada con una regata memorable</h3><p class="entry-note">Más de 40 embarcaciones largaron desde el Club Náutico y completaron el recorrido frente a nuestras playas.</p><div class="entry-meta"><span>◷ 4 min de lectura</span><span>↗ Club Náutico</span></div></div>
+          <button class="more" aria-label="Más opciones">•••</button>
+        </article>
+      </div>
+      <button class="load-more" id="load-more">Ver todas las noticias <span>↓</span></button>
+    </section>
+
+    <section class="new-entry" id="announcements">
+      <div class="new-entry-inner"><div><p class="eyebrow">Agenda abierta</p><h2>¿Hay algo para contar?</h2><p class="announcement-copy">Mandanos el dato de tu club, torneo o evento deportivo.</p></div><button class="button button-accent" id="open-form">+ Publicar anuncio</button></div>
+      <form class="entry-form" id="entry-form" hidden><label>Disciplina <select id="activity"><option value="futbol">Fútbol</option><option value="running">Running</option><option value="basket">Básquet</option><option value="mar">Mar</option></select></label><label>Tu anuncio <input id="feeling" placeholder="Fecha, lugar y detalle..." required /></label><button class="button button-dark" type="submit">Enviar anuncio</button></form>
+    </section>
+  </main>
+  <footer><span>CFA Sports / periodismo de la escena local</span><span>Mar del Plata · Pueyrredon <b>✦</b></span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
