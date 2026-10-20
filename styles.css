@@ -1,10 +1,9 @@
 :root {
-  --ink: #1f2421;
-  --paper: #f4f5ef;
+  --negro: #1f2421;
   --line: #d7d9d0;
   --muted: #737970;
-  --lime: #d9f25b;
-  --orange: #fa7049;
+  --verde: #d9f25b;
+  --naranja: #fa7049;
   --serif: Georgia, 'Times New Roman', serif;
 }
 
@@ -19,8 +18,8 @@ html {
 
 body {
   margin: 0;
-  background: var(--paper);
-  color: var(--ink);
+  background: #f4f5ef;
+  color: var(--negro);
   font-family: 'Manrope', sans-serif;
 }
 
@@ -64,7 +63,7 @@ button {
   width: 27px;
   height: 27px;
   border-radius: 50%;
-  background: var(--lime);
+  background: var(--verde);
   font-family: var(--serif);
   font-size: 19px;
   font-style: italic;
@@ -85,8 +84,8 @@ button {
 }
 
 .nav-links a.active {
-  color: var(--ink);
-  border-color: var(--ink);
+  color: var(--negro);
+  border-color: var(--negro);
 }
 
 .profile {
@@ -104,7 +103,7 @@ button {
   border-bottom: 1px solid #c8c9c1;
   outline: 0;
   background: transparent;
-  color: var(--ink);
+  color: var(--negro);
   font: inherit;
 }
 
@@ -126,7 +125,7 @@ button {
   height: 30px;
   border-radius: 50%;
   background: #e3e3dc;
-  color: var(--ink);
+  color: var(--negro);
   font-size: 9px;
   border: 0;
   cursor: pointer;
@@ -162,13 +161,13 @@ button {
 }
 
 .button-dark {
-  background: var(--ink);
+  background: var(--negro);
   color: white;
 }
 
 .button-accent {
-  background: var(--lime);
-  color: var(--ink);
+  background: var(--verde);
+  color: var(--negro);
 }
 
 /* Hero */
@@ -192,7 +191,7 @@ button {
 }
 
 .hero h1 em {
-  color: var(--orange);
+  color: var(--naranja);
   font-family: var(--serif);
   font-weight: 400;
   letter-spacing: -0.07em;
@@ -240,7 +239,7 @@ button {
   height: 7px;
   margin-right: 6px;
   border-radius: 50%;
-  background: var(--lime);
+  background: var(--verde);
 }
 
 .art-caption {
@@ -322,12 +321,12 @@ button {
 
 .bar.filled {
   height: 31px;
-  background: var(--ink);
+  background: var(--negro);
 }
 
 .bar.today {
   height: 39px;
-  background: var(--orange);
+  background: var(--naranja);
 }
 
 .week-bars small {
@@ -375,9 +374,9 @@ button {
 }
 
 .filter.active {
-  border-color: var(--lime);
-  background: var(--lime);
-  color: var(--ink);
+  border-color: var(--verde);
+  background: var(--verde);
+  color: var(--negro);
 }
 
 .entries {
@@ -457,7 +456,7 @@ button {
 }
 
 .entry-type {
-  color: var(--orange);
+  color: var(--naranja);
 }
 
 .entry h3 {
@@ -494,7 +493,7 @@ button {
   margin-top: 30px;
   padding: 0 0 7px;
   border: 0;
-  border-bottom: 1px solid var(--ink);
+  border-bottom: 1px solid var(--negro);
   background: none;
   font-size: 11px;
   font-weight: 800;
@@ -508,7 +507,7 @@ button {
 /* Formulario de nueva entrada */
 .new-entry {
   padding: 46px 5vw;
-  background: var(--orange);
+  background: var(--naranja);
 }
 
 .new-entry-inner {
@@ -560,7 +559,7 @@ button {
   border: 0;
   outline: none;
   background: rgba(255, 255, 255, 0.45);
-  color: var(--ink);
+  color: var(--negro);
 }
 
 .entry-form .button {
@@ -568,7 +567,7 @@ button {
 }
 
 .entry-form .button-dark {
-  background: var(--ink);
+  background: var(--negro);
 }
 
 /* Pie de pagina */
@@ -583,7 +582,7 @@ footer {
 }
 
 footer b {
-  color: var(--orange);
+  color: var(--naranja);
   font-size: 14px;
 }
 
